@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nav Land – Kartlegging av kompetanse for fagprogram Velferd</title>
+
+  <!-- Henter html2pdf fra CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f8f9fa;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      color: #004c91;
+    }
+    p.intro {
+      text-align: center;
+      font-size: 14px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    fieldset {
+      border: 2px solid #004c91;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      padding: 20px;
+      background-color: #fff;
+      page-break-inside: avoid;
+    }
+    legend {
+      font-weight: bold;
+      color: #004c91;
+      font-size: 18px;
+    }
+    label {
+      display: block;
+      margin: 6px 0;
+    }
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    .footer {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+    input[type="text"], input[type="date"] {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    button {
+      display: block;
+      margin: 40px auto 0;
+      background-color: #004c91;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0060c0;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="skjema">
+    <h1>Nav Land – Kartlegging av kompetanse for fagprogram Velferd</h1>
+    <p class="intro">
+      Dette skjemaet brukes for å kartlegge kompetanse blant ansatte i Nav Land som arbeider med fagprogrammet <em>Velferd</em>.<br>
+      Kryss av for de punktene du behersker. Gjennomgå resultatet med nærmeste leder for videre opplæringsplan.
+    </p>
+
+    <fieldset>
+      <legend>Saksbehandler</legend>
+      <label><input type="checkbox">Legge inn ny bruker med brukerkategori og familieforhold</label>
+      <label><input type="checkbox">Legge inn ny søknad med inntekt, utgifter, gjeld og formue</label>
+      <label><input type="checkbox">Registrere vedtak med økonomisk beregning og utbetalingsplaner</label>
+      <label><input type="checkbox">Benytt “søknadsveiviseren” fra A–Å</label>
+      <label><input type="checkbox">Reflektere økonomiopplysninger i vedtaksdokument</label>
+      <label><input type="checkbox">Reflektere vedtaksdokument</label>
+      <label><input type="checkbox">Splitte søknad og splitte utbetalinger</label>
+      <label><input type="checkbox">Saksbehandle kvalifiseringsstønad slik at utbetaling blir korrekt</label>
+      <label><input type="checkbox">Tiltaksplaner – slik at SSB-rapportering blir korrekt</label>
+      <label><input type="checkbox">Håndtere endring av grunnbeløp</label>
+      <label><input type="checkbox">Reskontrobilde – oversikt og utvalg</label>
+      <label><input type="checkbox">Vedtaksregister – oversikt og utvalg</label>
+      <label><input type="checkbox">Fra person i familien til selvstendig bruker</label>
+      <label><input type="checkbox">Huskeliste</label>
+      <label><input type="checkbox">Journal</label>
+      <label><input type="checkbox">Postjournal – skrive brev og oversikt over post inn/ut</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Systemansvarlig / Superbruker</legend>
+      <label><input type="checkbox">Legge inn nye brukere med korrekte tilganger</label>
+      <label><input type="checkbox">Løse situasjoner der brukere har glemt passord</label>
+      <label><input type="checkbox">Endre / sette opp kontoplan</label>
+      <label><input type="checkbox">Endre / sette opp betalingskategorier</label>
+      <label><input type="checkbox">Bygge opp tilganger, tilpasset spesielle roller / brukere</label>
+      <label><input type="checkbox">Endre / lage nye maler med bokmerker</label>
+      <label><input type="checkbox">Vedlikeholde kodeverk for sosialhjelpsnormer</label>
+      <label><input type="checkbox">Kodeverk for kvalifiseringsstønad</label>
+      <label><input type="checkbox">Vedlikeholde forbindelsesregisteret</label>
+      <label><input type="checkbox">Eier- og Master-bildet – betydning og konsekvenser</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Økonomiansvarlig / Merkantil</legend>
+      <label><input type="checkbox">Anvisning, direkte remittering</label>
+      <label><input type="checkbox">Anvisning, utbetaling via Bank Aksept (kontant)</label>
+      <label><input type="checkbox">Anvisning, kvalifiseringsstønad</label>
+      <label><input type="checkbox">Anvisning, kvalifiseringsstønad til Lønn (filoverføring)</label>
+      <label><input type="checkbox">Overføring til regnskap</label>
+      <label><input type="checkbox">Reskontro – oversikt og utvalg</label>
+      <label><input type="checkbox">Endre utbetalinger</label>
+      <label><input type="checkbox">KID / melding til mottaker</label>
+      <label><input type="checkbox">Oppheve vilkår</label>
+      <label><input type="checkbox">Tilbakeføring av utbetalinger</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Leder</legend>
+      <label><input type="checkbox">Rapporter over brukere, søknader, saker og post</label>
+      <label><input type="checkbox">Rapporter for styring, internkontroll og utbetalinger</label>
+      <label><input type="checkbox">Rapporter til SSB (skjema 11 og 11c)</label>
+      <label><input type="checkbox">Oppfølging av huskelister</label>
+      <label><input type="checkbox">Godkjenningsrutiner</label>
+      <label><input type="checkbox">Autoriseringer / tilgangskontroll</label>
+    </fieldset>
+
+    <div class="footer">
+      <div>
+        <label for="dato">Dato: </label>
+        <input type="date" id="dato" name="dato" />
+      </div>
+      <div>
+        <label for="navn">Navn: </label>
+        <input type="text" id="navn" name="navn" size="30" />
+      </div>
+    </div>
+  </div>
+
+  <button id="lagrePDF">📄 Lagre hele skjemaet som PDF</button>
+
+  <script>
+    document.getElementById("lagrePDF").addEventListener("click", () => {
+      const element = document.getElementById("skjema");
+      const navn = document.getElementById("navn").value || "uten_navn";
+      const dato = document.getElementById("dato").value || new Date().toISOString().slice(0,10);
+      const filnavn = `Kompetansekartlegging_${navn}_${dato}.pdf`;
+
+      const opt = {
+        margin: [0.5, 0.5, 0.5, 0.5],
+        filename: filnavn,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
+        jsPDF: { unit: 'cm', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+      };
+
+      html2pdf().set(opt).from(element).save();
+    });
+  </script>
+
+</body>
+</html>
